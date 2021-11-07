@@ -8,7 +8,7 @@
  */
   // Location of directory where Routegadget is installed.
   // This should have /kartat and /rg2 sub-directories.
-  define('RG_BASE_DIRECTORY', 'http://localhost/');
+  define('RG_BASE_DIRECTORY', 'http://localhost');
   
   // override to allow js and css to be loaded from a separate location if needed
   // probably only relevant for routegadget.co.uk to avoid 100 copies of source files
