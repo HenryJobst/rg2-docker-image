@@ -1,1 +1,1 @@
-docker build -t nksdaoxxso/routegadget2_extended:latest .
+docker build --no-cache -t nksdaoxxso/routegadget2:latest .
