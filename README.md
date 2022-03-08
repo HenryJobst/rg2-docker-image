@@ -1,3 +1,5 @@
 # rg2-docker-image
 
-Dockerfile to build a docker image for a RouteGadget 2 installation on apache2 webserver with code from https://github.com/HenryJobst/rg2
+Docker image for a full functional RouteGadget 2 installation on apache2 webserver with original RG2 code from https://github.com/Maprunner/rg2
+
+The included dockerfile can use an alternative (forked) repository via the environment variable REPOSITORY. There is no automatic image creation for these modified image.
