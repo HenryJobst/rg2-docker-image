@@ -1,8 +1,10 @@
 FROM ubuntu:latest
 
+RUN apt-get update && apt-get install -y curl
+
 RUN ln -snf /usr/share/zoneinfo/$(curl https://ipapi.co/timezone) /etc/localtime && \
-  apt-get update && apt-get install -y apache2 php php-mbstring libapache2-mod-php nodejs git wget npm php-gd && \
-  npm install -g grunt-cli 
+  apt-get install -y apache2 php php-mbstring libapache2-mod-php nodejs git wget npm php-gd && \
+  npm install -g grunt-cli
 
 COPY ./routegadget.conf /etc/apache2/conf-available/routegadget.conf
 RUN a2enconf routegadget.conf 
